@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D05957225A8BFC400A16056 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D05957125A8BFC400A16056 /* StorageManager.swift */; };
 		7D64C66725A8AE71005EBF3D /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D64C66625A8AE71005EBF3D /* UserModel.swift */; };
+		7D64C67625A8B883005EBF3D /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D64C67525A8B883005EBF3D /* LoginVC.swift */; };
+		7D64C67925A8B8A6005EBF3D /* PassRecoveryStartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D64C67825A8B8A6005EBF3D /* PassRecoveryStartVC.swift */; };
+		7D64C67C25A8B8C9005EBF3D /* PassRecoveryEndVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D64C67B25A8B8C9005EBF3D /* PassRecoveryEndVC.swift */; };
+		7D64C68125A8B907005EBF3D /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D64C68025A8B907005EBF3D /* SignUpVC.swift */; };
 		C622DBAA25A33A4D001C8180 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C622DBA925A33A4D001C8180 /* AppDelegate.swift */; };
 		C622DBAC25A33A4D001C8180 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C622DBAB25A33A4D001C8180 /* SceneDelegate.swift */; };
 		C622DBB125A33A4D001C8180 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C622DBAF25A33A4D001C8180 /* Main.storyboard */; };
@@ -22,7 +27,12 @@
 
 /* Begin PBXFileReference section */
 		490781FA8C1629E5085C12D3 /* Pods-TeamApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeamApp.debug.xcconfig"; path = "Target Support Files/Pods-TeamApp/Pods-TeamApp.debug.xcconfig"; sourceTree = "<group>"; };
+		7D05957125A8BFC400A16056 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		7D64C66625A8AE71005EBF3D /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		7D64C67525A8B883005EBF3D /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		7D64C67825A8B8A6005EBF3D /* PassRecoveryStartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassRecoveryStartVC.swift; sourceTree = "<group>"; };
+		7D64C67B25A8B8C9005EBF3D /* PassRecoveryEndVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassRecoveryEndVC.swift; sourceTree = "<group>"; };
+		7D64C68025A8B907005EBF3D /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		B7ED0676753FC9348D21C355 /* Pods_TeamApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TeamApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C51B18F39D2E1B3FC7BDEE4F /* Pods-TeamApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeamApp.release.xcconfig"; path = "Target Support Files/Pods-TeamApp/Pods-TeamApp.release.xcconfig"; sourceTree = "<group>"; };
 		C622DBA625A33A4D001C8180 /* TeamApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeamApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,6 +124,11 @@
 				C622DBCE25A344AB001C8180 /* LectionsTableViewController.swift */,
 				C622DBD225A35D43001C8180 /* TestViewController.swift */,
 				C670830E25A609380000324C /* TestStartedViewController.swift */,
+				7D64C67525A8B883005EBF3D /* LoginVC.swift */,
+				7D64C67825A8B8A6005EBF3D /* PassRecoveryStartVC.swift */,
+				7D64C67B25A8B8C9005EBF3D /* PassRecoveryEndVC.swift */,
+				7D64C68025A8B907005EBF3D /* SignUpVC.swift */,
+				7D05957125A8BFC400A16056 /* StorageManager.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -251,11 +266,16 @@
 				C622DBCF25A344AB001C8180 /* LectionsTableViewController.swift in Sources */,
 				C622DBAA25A33A4D001C8180 /* AppDelegate.swift in Sources */,
 				7D64C66725A8AE71005EBF3D /* UserModel.swift in Sources */,
+				7D64C67925A8B8A6005EBF3D /* PassRecoveryStartVC.swift in Sources */,
+				7D64C68125A8B907005EBF3D /* SignUpVC.swift in Sources */,
 				C670830F25A609380000324C /* TestStartedViewController.swift in Sources */,
 				C622DBCB25A33F84001C8180 /* Data Manager.swift in Sources */,
 				C622DBC525A33C5D001C8180 /* ModulesTableViewController.swift in Sources */,
 				C622DBD325A35D43001C8180 /* TestViewController.swift in Sources */,
+				7D64C67C25A8B8C9005EBF3D /* PassRecoveryEndVC.swift in Sources */,
+				7D64C67625A8B883005EBF3D /* LoginVC.swift in Sources */,
 				C622DBAC25A33A4D001C8180 /* SceneDelegate.swift in Sources */,
+				7D05957225A8BFC400A16056 /* StorageManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
