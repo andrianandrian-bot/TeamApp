@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D64C66725A8AE71005EBF3D /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D64C66625A8AE71005EBF3D /* UserModel.swift */; };
 		C622DBAA25A33A4D001C8180 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C622DBA925A33A4D001C8180 /* AppDelegate.swift */; };
 		C622DBAC25A33A4D001C8180 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C622DBAB25A33A4D001C8180 /* SceneDelegate.swift */; };
 		C622DBB125A33A4D001C8180 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C622DBAF25A33A4D001C8180 /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		490781FA8C1629E5085C12D3 /* Pods-TeamApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeamApp.debug.xcconfig"; path = "Target Support Files/Pods-TeamApp/Pods-TeamApp.debug.xcconfig"; sourceTree = "<group>"; };
+		7D64C66625A8AE71005EBF3D /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		B7ED0676753FC9348D21C355 /* Pods_TeamApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TeamApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C51B18F39D2E1B3FC7BDEE4F /* Pods-TeamApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeamApp.release.xcconfig"; path = "Target Support Files/Pods-TeamApp/Pods-TeamApp.release.xcconfig"; sourceTree = "<group>"; };
 		C622DBA625A33A4D001C8180 /* TeamApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeamApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -128,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				C622DBCA25A33F84001C8180 /* Data Manager.swift */,
+				7D64C66625A8AE71005EBF3D /* UserModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -247,6 +250,7 @@
 			files = (
 				C622DBCF25A344AB001C8180 /* LectionsTableViewController.swift in Sources */,
 				C622DBAA25A33A4D001C8180 /* AppDelegate.swift in Sources */,
+				7D64C66725A8AE71005EBF3D /* UserModel.swift in Sources */,
 				C670830F25A609380000324C /* TestStartedViewController.swift in Sources */,
 				C622DBCB25A33F84001C8180 /* Data Manager.swift in Sources */,
 				C622DBC525A33C5D001C8180 /* ModulesTableViewController.swift in Sources */,
