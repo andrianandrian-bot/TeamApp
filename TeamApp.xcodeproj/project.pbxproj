@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		7D05957225A8BFC400A16056 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D05957125A8BFC400A16056 /* StorageManager.swift */; };
+		7D19D52825A8D88800283429 /* LectureModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D19D52725A8D88800283429 /* LectureModel.swift */; };
+		7D19D52B25A8DA5100283429 /* LectureCategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D19D52A25A8DA5100283429 /* LectureCategoryModel.swift */; };
 		7D64C66725A8AE71005EBF3D /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D64C66625A8AE71005EBF3D /* UserModel.swift */; };
 		7D64C67625A8B883005EBF3D /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D64C67525A8B883005EBF3D /* LoginVC.swift */; };
 		7D64C67925A8B8A6005EBF3D /* PassRecoveryStartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D64C67825A8B8A6005EBF3D /* PassRecoveryStartVC.swift */; };
@@ -28,6 +30,8 @@
 /* Begin PBXFileReference section */
 		490781FA8C1629E5085C12D3 /* Pods-TeamApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeamApp.debug.xcconfig"; path = "Target Support Files/Pods-TeamApp/Pods-TeamApp.debug.xcconfig"; sourceTree = "<group>"; };
 		7D05957125A8BFC400A16056 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		7D19D52725A8D88800283429 /* LectureModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LectureModel.swift; sourceTree = "<group>"; };
+		7D19D52A25A8DA5100283429 /* LectureCategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LectureCategoryModel.swift; sourceTree = "<group>"; };
 		7D64C66625A8AE71005EBF3D /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		7D64C67525A8B883005EBF3D /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		7D64C67825A8B8A6005EBF3D /* PassRecoveryStartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassRecoveryStartVC.swift; sourceTree = "<group>"; };
@@ -146,6 +150,8 @@
 			children = (
 				C622DBCA25A33F84001C8180 /* Data Manager.swift */,
 				7D64C66625A8AE71005EBF3D /* UserModel.swift */,
+				7D19D52725A8D88800283429 /* LectureModel.swift */,
+				7D19D52A25A8DA5100283429 /* LectureCategoryModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -264,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C622DBCF25A344AB001C8180 /* LectionsTableViewController.swift in Sources */,
+				7D19D52B25A8DA5100283429 /* LectureCategoryModel.swift in Sources */,
 				C622DBAA25A33A4D001C8180 /* AppDelegate.swift in Sources */,
 				7D64C66725A8AE71005EBF3D /* UserModel.swift in Sources */,
 				7D64C67925A8B8A6005EBF3D /* PassRecoveryStartVC.swift in Sources */,
@@ -273,6 +280,7 @@
 				C622DBC525A33C5D001C8180 /* ModulesTableViewController.swift in Sources */,
 				C622DBD325A35D43001C8180 /* TestViewController.swift in Sources */,
 				7D64C67C25A8B8C9005EBF3D /* PassRecoveryEndVC.swift in Sources */,
+				7D19D52825A8D88800283429 /* LectureModel.swift in Sources */,
 				7D64C67625A8B883005EBF3D /* LoginVC.swift in Sources */,
 				C622DBAC25A33A4D001C8180 /* SceneDelegate.swift in Sources */,
 				7D05957225A8BFC400A16056 /* StorageManager.swift in Sources */,

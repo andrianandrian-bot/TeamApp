@@ -15,10 +15,13 @@ class SignUpVC: UIViewController {
     @IBOutlet var passTF: UITextField!
     @IBOutlet var repeatPassTF: UITextField!
     @IBOutlet var createAccountButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        createAccountButton.isEnabled = false
         createAccountButton.layer.cornerRadius = 10
+        createAccountButton.addTarget(self, action: #selector(textFieldChanged), for: .editingChanged)
     }
     @IBAction func setAvatar(_ sender: UIButton) {
         let actionSheet = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
@@ -66,5 +69,20 @@ extension SignUpVC: UIImagePickerControllerDelegate, UINavigationControllerDeleg
         userAvatar.contentMode = .scaleToFill
         userAvatar.clipsToBounds = true
         dismiss(animated: true)
+    }
+}
+
+extension SignUpVC: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
+    @objc private func textFieldChanged() {
+        if emailTF.text?.isEmpty == false, repeatPassTF.text?.isEmpty == false {
+            createAccountButton.isEnabled = true
+        } else {
+            createAccountButton.isEnabled = false
+        }
     }
 }

@@ -11,6 +11,7 @@ class ModulesTableViewController: UITableViewController {
     
     // MARK: - Properties
     let modules = DataManager.shared.modules.sorted()
+    // let modules: LectureCategory?
     let modulesAndLectionsMap = DataManager.shared.modulesAndLectionsMap
     var lections: [String] = []
 
