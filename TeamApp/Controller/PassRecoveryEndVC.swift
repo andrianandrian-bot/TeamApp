@@ -6,9 +6,13 @@
 //
 
 import UIKit
+import  RealmSwift
 
 class PassRecoveryEndVC: UIViewController {
 
+    private var users: Results<User>!
+    var foundUserEnd: Results<User>?
+    
     @IBOutlet var newPass: UITextField!
     @IBOutlet var passRepeatTF: UITextField!
     @IBOutlet var setPassButton: UIButton!
@@ -16,10 +20,14 @@ class PassRecoveryEndVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        setPassButton.layer.cornerRadius = 10
+        users = realmUser.objects(User.self)
+        
+        // setPassButton.layer.cornerRadius = 10
     }
 
     
     @IBAction func newPassSet(_ sender: UIButton) {
+        guard let newPass = foundUserEnd?[0] else { return }
+        StorageManager.addNewUser(newPass)
     }
 }

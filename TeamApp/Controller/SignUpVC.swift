@@ -21,7 +21,8 @@ class SignUpVC: UIViewController {
         
         createAccountButton.isEnabled = false
         createAccountButton.layer.cornerRadius = 10
-        createAccountButton.addTarget(self, action: #selector(textFieldChanged), for: .editingChanged)
+        emailTF.addTarget(self, action: #selector(textFieldChanged), for: .editingChanged)
+        repeatPassTF.addTarget(self, action: #selector(textFieldChanged), for: .editingChanged)
     }
     @IBAction func setAvatar(_ sender: UIButton) {
         let actionSheet = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
@@ -48,8 +49,13 @@ class SignUpVC: UIViewController {
         let newUser = User(name: nameTF.text,
                            avatar: avatarData,
                            email: emailTF.text!,
-                           password: passTF.text!)
+                           password: repeatPassTF.text!)
         StorageManager.addNewUser(newUser)
+        performSegue(withIdentifier: "signUp", sender: nil)
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
 }
 

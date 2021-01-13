@@ -10,6 +10,8 @@
 		7D05957225A8BFC400A16056 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D05957125A8BFC400A16056 /* StorageManager.swift */; };
 		7D19D52825A8D88800283429 /* LectureModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D19D52725A8D88800283429 /* LectureModel.swift */; };
 		7D19D52B25A8DA5100283429 /* LectureCategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D19D52A25A8DA5100283429 /* LectureCategoryModel.swift */; };
+		7D52807B25AF2E5500497314 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D52807A25AF2E5500497314 /* Profile.swift */; };
+		7D52807E25AF2F1300497314 /* TestHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D52807D25AF2F1300497314 /* TestHistoryCell.swift */; };
 		7D64C66725A8AE71005EBF3D /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D64C66625A8AE71005EBF3D /* UserModel.swift */; };
 		7D64C67625A8B883005EBF3D /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D64C67525A8B883005EBF3D /* LoginVC.swift */; };
 		7D64C67925A8B8A6005EBF3D /* PassRecoveryStartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D64C67825A8B8A6005EBF3D /* PassRecoveryStartVC.swift */; };
@@ -32,6 +34,8 @@
 		7D05957125A8BFC400A16056 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		7D19D52725A8D88800283429 /* LectureModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LectureModel.swift; sourceTree = "<group>"; };
 		7D19D52A25A8DA5100283429 /* LectureCategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LectureCategoryModel.swift; sourceTree = "<group>"; };
+		7D52807A25AF2E5500497314 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		7D52807D25AF2F1300497314 /* TestHistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHistoryCell.swift; sourceTree = "<group>"; };
 		7D64C66625A8AE71005EBF3D /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		7D64C67525A8B883005EBF3D /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		7D64C67825A8B8A6005EBF3D /* PassRecoveryStartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassRecoveryStartVC.swift; sourceTree = "<group>"; };
@@ -133,6 +137,8 @@
 				7D64C67B25A8B8C9005EBF3D /* PassRecoveryEndVC.swift */,
 				7D64C68025A8B907005EBF3D /* SignUpVC.swift */,
 				7D05957125A8BFC400A16056 /* StorageManager.swift */,
+				7D52807A25AF2E5500497314 /* Profile.swift */,
+				7D52807D25AF2F1300497314 /* TestHistoryCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -277,7 +283,9 @@
 				7D64C68125A8B907005EBF3D /* SignUpVC.swift in Sources */,
 				C670830F25A609380000324C /* TestStartedViewController.swift in Sources */,
 				C622DBCB25A33F84001C8180 /* Data Manager.swift in Sources */,
+				7D52807E25AF2F1300497314 /* TestHistoryCell.swift in Sources */,
 				C622DBC525A33C5D001C8180 /* ModulesTableViewController.swift in Sources */,
+				7D52807B25AF2E5500497314 /* Profile.swift in Sources */,
 				C622DBD325A35D43001C8180 /* TestViewController.swift in Sources */,
 				7D64C67C25A8B8C9005EBF3D /* PassRecoveryEndVC.swift in Sources */,
 				7D19D52825A8D88800283429 /* LectureModel.swift in Sources */,

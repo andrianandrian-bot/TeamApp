@@ -60,7 +60,7 @@
                                         <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                         <state key="normal" title="Login"/>
                                         <connections>
-                                            <segue destination="1ay-Bw-B5l" kind="show" id="niz-79-8pX"/>
+                                            <action selector="login:" destination="gME-O7-wp2" eventType="touchUpInside" id="TXq-gz-Ttr"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -96,9 +96,12 @@
                         <outlet property="loginButton" destination="2Ti-ES-oy6" id="gbC-2I-nef"/>
                         <outlet property="loginTF" destination="OM2-MG-asA" id="5eU-3z-EOH"/>
                         <outlet property="passwordTF" destination="FFS-eR-GC7" id="EIc-Ua-vIy"/>
+                        <segue destination="1ay-Bw-B5l" kind="show" identifier="loginSegue" id="9ur-BT-Ney"/>
+                        <segue destination="j24-j2-NyV" kind="unwind" identifier="unwindToLogin" unwindAction="unwindTiLogin:" id="Sgu-tF-DM4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EXP-tj-TAU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="j24-j2-NyV" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-1554" y="27"/>
         </scene>
@@ -134,7 +137,6 @@
                                         <state key="normal" title="Next"/>
                                         <connections>
                                             <action selector="next:" destination="wbU-33-6mb" eventType="touchUpInside" id="91O-mW-3v0"/>
-                                            <segue destination="KQO-b9-BIQ" kind="show" id="9Td-cT-Xvq"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -154,6 +156,7 @@
                     <connections>
                         <outlet property="loginTF" destination="GoH-cU-qbu" id="yuB-56-pgp"/>
                         <outlet property="nextButton" destination="NAs-tg-M7i" id="fqA-NN-AMi"/>
+                        <segue destination="KQO-b9-BIQ" kind="show" identifier="nextRec" id="wKM-B9-tYY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CcA-Ui-67I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -248,11 +251,12 @@
                         <outlet property="passTF" destination="hP7-gR-QZg" id="mNu-tp-t9c"/>
                         <outlet property="repeatPassTF" destination="dR6-8N-Ooy" id="XeL-kq-H4d"/>
                         <outlet property="userAvatar" destination="GF0-qP-4Lz" id="JSx-fE-h4k"/>
+                        <segue destination="1ay-Bw-B5l" kind="show" identifier="signUp" id="Tdp-EG-dEJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="57q-y0-Qcr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-799" y="784"/>
+            <point key="canvasLocation" x="-1554" y="809"/>
         </scene>
         <!--Pass Recovery EndVC-->
         <scene sceneID="xEI-FD-Zig">
@@ -281,6 +285,7 @@
                                         <state key="normal" title="Set new password"/>
                                         <connections>
                                             <action selector="newPassSet:" destination="KQO-b9-BIQ" eventType="touchUpInside" id="ZSh-1L-6F2"/>
+                                            <segue destination="YWD-yt-PWw" kind="unwind" unwindAction="unwindTiLogin:" id="mQL-fn-uP2"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -315,6 +320,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ugL-XY-9nz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="YWD-yt-PWw" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="54" y="-694"/>
         </scene>
@@ -351,10 +357,10 @@
             </objects>
             <point key="canvasLocation" x="976.79999999999995" y="27.436281859070466"/>
         </scene>
-        <!--View Controller-->
+        <!--Profile-->
         <scene sceneID="PZx-Z3-7KH">
             <objects>
-                <viewController id="g3z-FG-I2V" sceneMemberID="viewController">
+                <viewController id="g3z-FG-I2V" customClass="Profile" customModule="TeamApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wY1-Vn-w26">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -369,12 +375,15 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5RN-ta-Jgk">
                                 <rect key="frame" x="137.5" y="209" width="100" height="30"/>
                                 <state key="normal" title="Change avatar"/>
+                                <connections>
+                                    <action selector="changeAvatar:" destination="g3z-FG-I2V" eventType="touchUpInside" id="2OD-jC-YGs"/>
+                                </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Gcg-XU-B9e">
                                 <rect key="frame" x="0.0" y="310" width="375" height="308"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="90" id="a8g-g5-Ct1">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="90" id="a8g-g5-Ct1" customClass="TestHistoryCell" customModule="TeamApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="a8g-g5-Ct1" id="akI-A5-NjG">
@@ -382,7 +391,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Test name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zFN-iZ-4gy">
-                                                    <rect key="frame" x="10" y="10" width="79" height="20"/>
+                                                    <rect key="frame" x="10" y="10" width="79" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -397,6 +406,10 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="testName" destination="zFN-iZ-4gy" id="dKc-Em-Qb8"/>
+                                            <outlet property="testResult" destination="On4-ke-1Le" id="0nh-au-Waw"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -425,6 +438,11 @@
                     <navigationItem key="navigationItem" id="ccW-se-epb">
                         <barButtonItem key="rightBarButtonItem" title="Log Out" id="YTh-C1-udT"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="avatarUser" destination="d4k-5x-cMI" id="kfb-Ps-tdv"/>
+                        <outlet property="logOut" destination="YTh-C1-udT" id="hpY-7P-KPw"/>
+                        <outlet property="testHistory" destination="Gcg-XU-B9e" id="gOc-7k-Cx9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z3x-Fs-VYZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -683,6 +701,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="YLM-JR-zLO"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="WmW-9V-vMY">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -715,6 +734,9 @@
             <point key="canvasLocation" x="976.79999999999995" y="783.95802098950526"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="9ur-BT-Ney"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="chevron.backward" catalog="system" width="96" height="128"/>
         <systemColor name="opaqueSeparatorColor">

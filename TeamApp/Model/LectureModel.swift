@@ -7,13 +7,14 @@
 
 import RealmSwift
 
+@objcMembers
 class Lecture: Object {
-    @objc dynamic var title = ""
-    @objc dynamic var previewText: String?
-    @objc dynamic var previewImage: Data?
-    @objc dynamic var video: Data?
-    @objc dynamic var text: String?
-    @objc dynamic var category: LectureCategory!
+    dynamic var title = ""
+    dynamic var previewText: String?
+    dynamic var previewImage: Data?
+    dynamic var video: Data?
+    dynamic var text: String?
+    dynamic var category: LectureCategory!
     
     convenience init(title: String, previewText: String?, previewImage: Data?, video: Data?, text: String?, category: LectureCategory) {
         self.init()

@@ -7,8 +7,9 @@
 
 import RealmSwift
 
+@objcMembers
 class LectureCategory: Object {
-    @objc dynamic var title = ""
+    dynamic var title = ""
     
     convenience init(title: String) {
         self.init()

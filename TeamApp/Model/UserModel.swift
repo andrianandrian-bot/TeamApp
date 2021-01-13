@@ -7,11 +7,12 @@
 
 import RealmSwift
 
+@objcMembers
 class User: Object {
-    @objc dynamic var name: String?
-    @objc dynamic var avatar: Data?
-    @objc dynamic var email = ""
-    @objc dynamic var password = ""
+    dynamic var name: String?
+    dynamic var avatar: Data?
+    dynamic var email = ""
+    dynamic var password = ""
     
     convenience init(name: String?, avatar: Data?, email: String, password: String) {
         self.init()

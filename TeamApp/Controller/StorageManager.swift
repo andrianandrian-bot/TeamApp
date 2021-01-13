@@ -18,7 +18,7 @@ class StorageManager {
     
     static func updatePass(_ newPass: User) {
         try! realmUser.write {
-            // need some code
+            realmUser.add(newPass, update: .modified)
         }
     }
 }

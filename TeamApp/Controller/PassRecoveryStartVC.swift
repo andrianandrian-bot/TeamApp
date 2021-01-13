@@ -10,7 +10,7 @@ import RealmSwift
 
 class PassRecoveryStartVC: UIViewController {
     
-    private var user: Results<User>!
+    private var users: Results<User>!
     var foundUser: Results<User>!
 
     @IBOutlet var loginTF: UITextField!
@@ -19,16 +19,28 @@ class PassRecoveryStartVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        user = realmUser.objects(User.self)
+        users = realmUser.objects(User.self)
 
         nextButton.layer.cornerRadius = 10
     }
     
     @IBAction func next(_ sender: UIButton) {
-        if user.filter("name == loginTF.text") != nil {
-            foundUser = user.filter("name == loginTF.text")
+        let foundUser = users.filter("name == %@", loginTF.text!)
+        
+        if foundUser.isEmpty == false {
+            self.foundUser = foundUser
+            performSegue(withIdentifier: "nextRec", sender: nil)
         } else {
-            // alert
+            let alert = UIAlertController(title: "Non-existent email", message: "Please try again", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "OK", style: .cancel)
+            alert.addAction(okAction)
+            present(alert, animated: true)
         }
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let dvc = segue.destination as? PassRecoveryEndVC else { return }
+        dvc.foundUserEnd = foundUser
     }
 }
